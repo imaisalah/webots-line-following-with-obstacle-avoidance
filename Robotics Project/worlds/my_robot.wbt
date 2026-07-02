@@ -1,0 +1,80 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "../protos/TrackOne.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/WoodenBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5759636301013678 -0.575047034972128 0.5810222064346761 4.192911149653055
+  position -0.13635339962275195 0.024385882352789934 3.820499372735857
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+  floorAppearance NULL
+}
+WoodenBox {
+  translation -0.01 -0.31 0.04
+  name "wooden box(3)"
+  size 0.08 0.08 0.08
+}
+WoodenBox {
+  translation -0.53 -0.42 0.05
+  name "wooden box(4)"
+  size 0.08 0.08 0.08
+}
+E-puck {
+  hidden position_0_0 14239.949127434049
+  hidden position_0_1 14065.28033687757
+  hidden linearVelocity_0 -0.034596114705974026 -0.014919279118195686 2.9928886190765752e-06
+  hidden angularVelocity_0 0.2181527562190009 -0.5055479248137064 -0.9340607716393775
+  hidden rotation_1 0 0.9999999999999999 0 2.251221365105976
+  hidden linearVelocity_1 -0.05942816923575005 -0.025627362866532773 -3.755400228120054e-07
+  hidden angularVelocity_1 1.3275578084760327 -3.076388318143062 -0.9341290015656033
+  hidden rotation_2 0 1 0 3.51161940965489
+  hidden linearVelocity_2 -0.01482309602353949 -0.00639557891105845 -3.153505277816849e-07
+  hidden angularVelocity_2 0.27358247390514157 -0.6341074777870932 -0.9339908823240147
+  translation 0.5832726894427847 -0.5847236615377783 -6.215123331046978e-05
+  rotation -0.008749538360869785 -0.001808526308964872 0.9999600866089913 -2.7641257123097405
+  controller "line_follower_controller"
+  window "<none>"
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+    DistanceSensor {
+      translation 0 0.02 0
+      rotation 0.8434402066220645 0 0.5372230615427163 0
+      name "ir1"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 -0.01 0
+      rotation 0.8434402066220645 0 0.5372230615427163 0
+      name "ir0"
+      type "infra-red"
+    }
+  ]
+}
+TrackOne {
+  translation -9.03574e-08 -6.11564e-14 0.01
+  rotation -2.7160391595145105e-06 -0.7071067811839394 0.7071067811839394 -3.1415853071795863
+  scale 0.012 0.01 0.02
+}
+WoodenBox {
+  translation 0.81 -0.17 0.04
+  size 0.08 0.08 0.08
+}
+WoodenBox {
+  translation -0.11 0.65 0.04
+  name "wooden box(5)"
+  size 0.08 0.08 0.08
+}
